@@ -1,0 +1,180 @@
+*{margin:0; padding:0;}
+
+.banner
+{
+    background:url("images/image.jpg");
+    width: 100%;
+ background-size:cover;    
+}
+
+.top-bar{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height:auto;
+}
+
+.logo{
+font-size: 40px;
+color: aliceblue;
+flex: 1;
+padding: 18px;
+text-transform: uppercase;
+
+}
+
+.menu{
+    flex:1; 
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    margin-top: 30px;
+}
+
+.menu ul li {
+    flex:1;
+    text-align:center;
+
+}
+
+.menu ul li a {
+    color:#fff;
+    font-size:20px;
+    text-decoration: none;
+}
+
+
+
+/* banner */
+
+.banner-text{
+    display: flex;
+    padding: 15% 0;
+}
+
+.banner-text-items{
+    color:orangered;
+    margin:auto;
+    text-align: center;
+    width: 50%;
+
+}
+
+.banner-text-items h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.banner-text-items p {
+    font-size: 18px;
+}
+
+/* main content */
+
+.main-content{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5% 0;
+}
+
+.main1{
+    text-align: center;
+    flex:1;
+    padding: 5% 0 ;
+}
+
+
+.contact-items {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+
+.contact{
+    background: url("images/image1.jpg");
+    padding:80px 0;
+    background-size: cover; 
+    position: relative;
+    z-index: 1;
+}
+
+.contact-items h2{
+    color:#fff;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+ 
+.contact-items input[type="text"]
+{
+border-radius:10px; 
+margin-bottom: 15px;
+padding: 15px;
+width: 50%;
+}
+
+.contact-items textarea{
+    border-radius: 10px;
+    height: 150px;
+    padding: 15px;
+    width: 50%;
+}
+
+.contact-items a {
+    background: orangered;
+    display: block;
+    font-size: 20px;
+    padding: 15px 80px;
+    margin-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media all and (max-width:800px){
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px; 
+    }
+.menu ul {
+    flex-direction: column;
+    margin-top: 0;
+
+}
+
+.menu ul li {
+    padding: 5px;
+
+}
+
+.banner-text-items{
+    width:100%
+}
+
+.banner-text-items h2{
+    font-size: 1.5em;
+}
+
+.main-content{
+    flex-direction: column;
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* d */
